@@ -1,1 +1,7 @@
 # 1st-Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Project</title>
+</head>
