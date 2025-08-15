@@ -1,43 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multimedia Player</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Club Feedback Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Club Feedback Form</h1>
+      <p>
+        Thank you for partying with us. Please provide feedback on your recent
+        stay.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required size="20">
 
-<body>
-<h1>Not YouTube</h1>
-<section>
-  <h2>Codecamp Anthem</h2>
-  <audio controls aria-label="Codecamp anthem">
-    <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"  type="audio/mpeg">
-    </audio>
-  </section>
-  <section>
-    <h2>CodeCamp Map Method</h2>
-    <video controls width="600" aria-label="codecamp video"> 
-      <source src="https://cdn.freecodecamp.org/curriculum/labs/What is the map method and how does it work.mp4" type="video">
-      <track src="" kind="captions" srclang="en" label="english">
-      </video>
-      </section>
-      <section>
-        <h2>Transcript</h2>
-        <p>Welcome to the FreeCodeCamp music video</p>
-        </section>
-      
-      
-      
-      
-      </video>
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
 
+        <fieldset>
+          <legend>Was this your first time at our club?</legend>
+          <label for="yes-option">Yes</label>
+          <input id="yes-option" type="radio" name="club-stay" />
+          <label for="no-option">No</label>
+          <input id="no-option" type="radio" name="club-stay" />
+        </fieldset>
 
+        <fieldset>
+          <legend>
+            Why did you choose to party at our club? (Check all that apply)
+          </legend>
 
+          <label for="ads">Social Media Ads</label>
+          <input type="checkbox" id="ads" name="ads" value="ads" />
 
+          <label for="recommendation">Personal Recommendation</label>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="recommendation"
+            value="recommendation"
+          />
 
-</body>
+          <label for="location">Location</label>
+          <input type="checkbox" id="location" name="location" value="location" />
 
+          <label for="reputation">Reputation</label>
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="reputation"
+            value="reputation"
+          />
 
+          <label for="price">Price</label>
+          <input type="checkbox" id="price" name="price" value="price" />
+        </fieldset>
 
+        <fieldset>
+          <legend>Ratings</legend>
+
+          <label for="service">How was the service?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+          <label for="staff">How was the staff?</label>
+
+          <select name="staff" id="staff">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+
+        <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+          <button type="submit">Submit</button>
+               </form>
+    </main>
+  </body>
 </html>
