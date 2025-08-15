@@ -35,9 +35,9 @@
         <fieldset>
           <legend>Was this your first time at our club?</legend>
           <label for="yes-option">Yes</label>
-          <input id="yes-option" type="radio" name="club-stay" />
+          <input id="yes-option" type="radio" name="club-stay" value="yes" required />
           <label for="no-option">No</label>
-          <input id="no-option" type="radio" name="club-stay" />
+          <input id="no-option" type="radio" name="club-stay" value="no" />
         </fieldset>
 
         <fieldset>
@@ -76,7 +76,6 @@
           <legend>Ratings</legend>
 
           <label for="service">How was the service?</label>
-
           <select name="service" id="service">
             <option value="poor">Poor</option>
             <option value="satisfactory">Satisfactory</option>
@@ -86,7 +85,6 @@
           </select>
 
           <label for="staff">How was the staff?</label>
-
           <select name="staff" id="staff">
             <option value="poor">Poor</option>
             <option value="satisfactory">Satisfactory</option>
@@ -98,8 +96,8 @@
 
         <label for="comments">Other Comments?</label>
         <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
-          <button type="submit">Submit</button>
-               </form>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   </body>
 </html>
